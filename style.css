@@ -192,3 +192,11 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
+
+.contenedor-section6 {
+  display: flex;
+}
+
+.contenedor-section6-h2 {
+  margin: 0;
+}
