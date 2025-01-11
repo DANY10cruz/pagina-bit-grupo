@@ -195,8 +195,77 @@ h2 {
 
 .contenedor-section6 {
   display: flex;
+  justify-content: space-between;
+  border: 1px solid purple;
 }
 
-.contenedor-section6-h2 {
+.contenedor-section6-h2 h2 {
   margin: 0;
+  font-size: 30px;
+}
+
+.contenedor-section6-botones {
+  display: flex;
+  border: 1px solid green;
+  padding-right: 40px;
+  gap: 10px;
+}
+
+.contenedor-section6-boton1 {
+  height: 30px;
+}
+
+.contenedor-section6-boton2 {
+  height: 30px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-footer-parrafos {
+  display: flex;
+  gap: 8px;
+}
+
+.contenedor-footer-redes-sociales {
+  border: 1px solid green;
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.contenedor-footer-pie-pagina {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-footer-derechos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-footer-politicas {
+  border: 1px solid green;
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.contenedor-section5-personas {
+  background-color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-section5-personas {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contenedor-section5-personas {
+    background-color: red;
+    flex-direction: column;
+  }
 }
