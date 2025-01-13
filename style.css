@@ -6,7 +6,6 @@ body {
 
 nav,
 .navegacion {
-  border: 1px solid black;
   font-size: 20px;
   display: flex;
   justify-content: space-around;
@@ -17,14 +16,18 @@ nav a {
   list-style: none;
   text-decoration: none;
 }
+nav a:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
 
 main {
-  background-color: gray;
   height: 40rem;
+  background-color: rgb(129, 129, 129);
 }
 
 h1 {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   padding-top: 200px;
@@ -32,106 +35,93 @@ h1 {
   margin: 0;
 }
 
-.parrafo p {
-  border: 1px solid aqua;
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
+.parrafo {
+  padding-right: 55px;
+  text-align: center;
 }
-
 .contenedor-botones {
   display: flex;
   justify-content: center;
-  gap: 20px;
-}
-
-.section-inicial {
-  height: 500px;
+  gap: 15px;
 }
 
 .boton-2 {
   width: 150px;
-  height: 50px;
+  height: 40px;
   font-size: 15px;
   text-align: center;
+  background-color: rgb(129, 129, 129);
+  color: white;
+  border: 2px solid white;
+}
+.boton-2:hover {
+  background-color: black;
 }
 
 .boton-1 {
-  width: 100px;
-  height: 50px;
+  width: 90px;
+  height: 40px;
   font-size: 15px;
   text-align: center;
+  background-color: white;
+}
+.boton-1:hover {
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  font-size: 50px;
 }
 
 .aside1 {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   height: 200px;
 }
 
-h2 {
-  border: 1px solid blue;
-  font-size: 50px;
-}
-
 .parrafo1 {
   padding-top: 30px;
-  border: 1px solid blue;
 }
 
 .aside-botones {
-  border: 1px solid blue;
   display: flex;
   justify-content: flex-start;
   gap: 20px;
 }
 
-.boton-aside1 {
-  width: 70px;
-  height: 30px;
-  font-size: 10px;
-  text-align: center;
-}
-
-.boton-aside2 {
-  width: 70px;
-  height: 30px;
-  font-size: 10px;
-  text-align: center;
-}
-
-.section3 {
-  border: 1px solid blueviolet;
+.section3-h3,
+h3 {
   display: flex;
   justify-content: center;
+  font-size: 40px;
+  margin: 0px;
 }
 
 .section3-parrafo {
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
+  margin: 0px;
 }
 
-.contenedor-section-imagenes {
-  display: flex;
+.contenedor-section3-imagenes {
   display: flex;
   justify-content: space-around;
 }
-.section3-parrafo p {
-  border: 1px solid green;
+.contenedor-section3-imagen1 {
+  display: flex;
+  gap: 30px;
+}
+.contenedor-section3-imagen1-1 {
+  text-align: center;
 }
 
-.contenedor-section3 {
-  border: 1px solid green;
-  display: flex;
-  justify-content: space-around;
+.contenedor-section3-imagen1-2 {
+  text-align: center;
 }
 
-.contenedor-section3-1 {
-  border: 1px solid red;
-  display: flex;
-  justify-content: space-around;
+.imagen-lenguajes {
+  border-radius: 10px;
 }
 
 .contenedor-section-botones {
@@ -145,6 +135,14 @@ h2 {
   height: 30px;
   font-size: 15px;
   text-align: center;
+  xt-align: center;
+  background-color: white;
+  border: 2px solid black;
+}
+.contenedor-section3-boton1:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }
 
 .contenedor-section3-boton2 {
@@ -152,17 +150,22 @@ h2 {
   height: 30px;
   font-size: 15px;
   text-align: center;
+  background-color: white;
+  border: none;
+}
+.contenedor-section3-boton2:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
 }
 
 .contenedor-section4-raiting {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
 
 .contenedor-section4-parrafo {
-  border: 1px solid purple;
   display: flex;
   justify-content: space-around;
 }
@@ -187,6 +190,9 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
+.imagnes-estudiantes {
+  border-radius: 50%;
+}
 
 .contenedor-section5-personas {
   display: flex;
@@ -196,7 +202,8 @@ h2 {
 .contenedor-section6 {
   display: flex;
   justify-content: space-between;
-  border: 1px solid purple;
+
+  height: 100px;
 }
 
 .contenedor-section6-h2 h2 {
@@ -206,31 +213,45 @@ h2 {
 
 .contenedor-section6-botones {
   display: flex;
-  border: 1px solid green;
+
   padding-right: 40px;
   gap: 10px;
 }
 
 .contenedor-section6-boton1 {
   height: 30px;
+  background-color: white;
+  color: black;
+}
+.contenedor-section6-boton1:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
 }
 
 .contenedor-section6-boton2 {
   height: 30px;
+  background-color: white;
 }
-
+.contenedor-section6-boton2:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
 .contenedor-footer {
   display: flex;
   justify-content: space-around;
 }
 
+.contenedor-footer-logo {
+  display: flex;
+}
 .contenedor-footer-parrafos {
   display: flex;
   gap: 8px;
 }
 
 .contenedor-footer-redes-sociales {
-  border: 1px solid green;
   display: flex;
   gap: 20px;
   padding-top: 15px;
@@ -247,25 +268,69 @@ h2 {
 }
 
 .contenedor-footer-politicas {
-  border: 1px solid green;
   display: flex;
   gap: 15px;
   padding-top: 15px;
 }
 
 .contenedor-section5-personas {
-  background-color: yellow;
 }
 
 @media screen and (max-width: 768px) {
   .contenedor-section5-personas {
-    background-color: blue;
   }
 }
 
 @media screen and (max-width: 375px) {
+  .navegacion {
+    flex-direction: column;
+  }
+
+  .contenedor-botones {
+    justify-content: flex-start;
+  }
+
+  .aside1 {
+    flex-direction: column;
+  }
+
+  .contenedor-section3-imagen1 {
+    flex-direction: column;
+  }
+  .imagen-lenguajes {
+    border: 2px solid black;
+  }
   .contenedor-section5-personas {
-    background-color: red;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenedor-section6 {
+    flex-direction: column;
+  }
+
+  .contenedor-footer {
+    flex-direction: column;
+  }
+
+  .contenedor-footer-logo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-footer-parrafos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-footer-redes-sociales {
+    justify-content: center;
+  }
+
+  .contenedor-footer-derechos {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .contenedor-footer-politicas {
     flex-direction: column;
   }
 }
